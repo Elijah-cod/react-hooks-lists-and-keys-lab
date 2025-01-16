@@ -7,9 +7,9 @@ function ProjectItem({ name, about, technologies }) {
       <p>{about}</p>
       <div className="technologies">
         {/* render a <span> for each technology in the technologies array */
-          technologies.map((tech)=>{
+          technologies.map((tech, i=1)=>{
             return(
-              <span>
+              <span key={i+1}>
                 {tech}
               </span>
             )
